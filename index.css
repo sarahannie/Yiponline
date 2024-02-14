@@ -136,7 +136,7 @@ nav .btns::before{
         display: block; 
     }
     
-    nav li:not(.btns)  {
+    nav li  {
         display: block;
         margin-bottom: 20px;
         border-bottom: 2px solid #eee;
@@ -145,14 +145,17 @@ nav .btns::before{
         padding-left: 5px;
     }
 
-    nav li.btns {
+
+    nav li > .btns {
       display: block !important;
       margin-bottom: 20px !important;
       border-bottom: 2px solid #eee !important;
-      width: 100% !important;
+      width: 48% ;
       margin-left: 0px !important;
       padding-left: 5px !important;
   }
+
+ 
 
     
 
@@ -165,6 +168,10 @@ nav .btns::before{
 
       nav a::before {
         background-color: #fff;
+      }
+      .mission_header{
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
       }
 }
 
