@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i');
+body {
+	margin: 0;
+	background: #f7f4f4;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+
+
+.containers {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #fff;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 70px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 20px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+
+nav a:hover::before {
+  width: 100%;
+}
+.toggle-btn {
+    display: none; 
+}
+
+.btns{
+    background: #2389cf;
+    color: #fff;
+    padding: 10px;
+}
+
+nav .btns::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #fff;
+   
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+
+  nav .btns:hover {
+    color: #fff;
+  }
+
+
+
+ 
+
+
+@media only screen and (max-width: 768px) {
+  .toggle-btn {
+    display: block; 
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    padding-top: 15px;
+}
+
+.toggle-btn .hide {
+    display: none;
+}
+
+    nav {
+        display: none; 
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        background: #fff;
+        padding: 10px;
+        height: 100vh;
+        width: 200px;
+        transition: all .4s ease-out;
+        z-index: 2;
+    }
+
+    nav.show {
+        display: block; 
+    }
+    
+    nav li:not(.btns)  {
+        display: block;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #eee;
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 5px;
+    }
+
+    nav li.btns {
+      display: block !important;
+      margin-bottom: 20px !important;
+      border-bottom: 2px solid #eee !important;
+      width: 100% !important;
+      margin-left: 0px !important;
+      padding-left: 5px !important;
+  }
+
+    
+
+    
+    
+  
+    nav a:hover {
+        color: #7a7a7a;
+      }
+
+      nav a::before {
+        background-color: #fff;
+      }
+}
+
+/* Hero section start */
+h1{
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Mission start */
+.mission_header{
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+}
